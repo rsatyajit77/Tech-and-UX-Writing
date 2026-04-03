@@ -1,0 +1,660 @@
+﻿<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='UTF-8'><style>body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1a1a1a;margin:0;padding:32px 40px;max-width:920px;line-height:1.7}
+.cover{text-align:center;padding:48px 0 36px;border-bottom:3px solid #2e4d8a;margin-bottom:36px}
+.cover-tag{font-size:10pt;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:#2e4d8a;margin-bottom:8px}
+.cover h1{font-size:28pt;font-weight:700;color:#1a2a4a;margin-bottom:8px}
+.cover-sub{font-size:12pt;color:#555;margin-bottom:14px}
+.cover-contact{font-size:10pt;color:#2e4d8a}
+.doc{margin-bottom:56px;padding-bottom:40px;border-bottom:3px solid #2e4d8a;page-break-after:always}
+.doc:last-of-type{border-bottom:none}
+.doc-header{background:linear-gradient(135deg,#1a2a4a,#2e4d8a);color:#fff;padding:24px 28px;display:flex;align-items:center;gap:20px}
+.doc-header-text{flex:1}
+.doc-num{font-size:9pt;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#9fb8d8;margin-bottom:4px}
+.doc-title{font-size:16pt;font-weight:700;margin-bottom:4px}
+.doc-sub{font-size:10pt;color:#b8cce0}
+.doc-icon{width:64px;height:64px;flex-shrink:0}
+.doc-purpose{background:#f7f9fc;border:1px solid #d5e0f0;padding:14px 18px;margin-bottom:22px;display:flex;align-items:flex-start;gap:10px}
+.doc-purpose p{font-size:10pt;color:#444;margin-bottom:0}
+.doc-purpose strong{color:#2e4d8a}
+h3.sec{font-size:11pt;font-weight:700;color:#2e4d8a;text-transform:uppercase;letter-spacing:0.8px;margin:22px 0 10px;padding-bottom:5px;border-bottom:2px solid #e0e8f5;display:flex;align-items:center;gap:8px}
+h4.sub{font-size:10.5pt;font-weight:700;color:#1a2a4a;margin:16px 0 6px}
+p{font-size:10.5pt;color:#222;margin-bottom:8px}
+ul{padding-left:18px;margin-bottom:8px}
+li{font-size:10.5pt;margin-bottom:5px;line-height:1.5}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:10pt;border:1px solid #d5e0f0}
+th{background:#1a2a4a;color:#fff;padding:10px 13px;text-align:left;font-size:9pt;font-weight:700;text-transform:uppercase}
+td{padding:10px 13px;border-bottom:1px solid #e0e6ef;vertical-align:top;line-height:1.5}
+tr:nth-child(even){background:#f7f9fc}
+.ex{background:#f7f9fc;border:1px solid #d5e0f0;padding:14px 16px;margin:10px 0}
+.ex-label{font-size:8.5pt;font-weight:700;text-transform:uppercase;color:#2e4d8a;margin-bottom:6px}
+.ex p{margin-bottom:5px}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.voice-card{background:#f7f9fc;border:1px solid #d5e0f0;padding:16px;display:flex;gap:12px}
+.voice-card h4{font-size:10.5pt;font-weight:700;color:#1a2a4a;margin-bottom:4px}
+.voice-card p{font-size:9.5pt;color:#444;margin-bottom:3px}
+.ex-do{font-size:9pt;color:#1a6b30;font-weight:600}
+.ex-dont{font-size:9pt;color:#c0392b;font-weight:600}
+.spectrum{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:14px 0;border:1px solid #d5e0f0}
+.spec-col{padding:14px 10px;text-align:center}
+.spec-col:nth-child(1){background:#fde8e8}
+.spec-col:nth-child(2){background:#fff3e0}
+.spec-col:nth-child(3){background:#fefce8}
+.spec-col:nth-child(4){background:#e8f5e9}
+.spec-col:nth-child(5){background:#e3f2fd}
+.spec-label{font-size:8pt;font-weight:700;text-transform:uppercase;margin-bottom:4px}
+.spec-tone{font-size:9.5pt;font-weight:600;margin-bottom:3px}
+.spec-ex{font-size:8.5pt;color:#555;line-height:1.3}
+.dtree{background:#fff8e6;border:1px solid #e6d5a0;padding:16px 18px;margin:10px 0}
+.dtree-q{font-size:10.5pt;font-weight:700;color:#7a4a00;margin-bottom:8px;display:flex;align-items:flex-start;gap:8px}
+.dtree-branch{margin-left:20px;padding-left:16px;border-left:2px solid #e6c85a;margin-bottom:4px}
+.dtree-a{font-size:10pt;color:#4a3300;margin-bottom:4px;display:flex;align-items:flex-start;gap:6px}
+.dtree-yes{background:#27500A;color:#fff;font-size:8pt;font-weight:700;padding:1px 6px}
+.dtree-no{background:#9a2020;color:#fff;font-size:8pt;font-weight:700;padding:1px 6px}
+.dtree-result{background:#fff;border:1px solid #d5e0f0;padding:8px 12px;margin:6px 0 6px 20px;font-size:9.5pt;display:flex;align-items:flex-start;gap:6px}
+.dont-list{margin:10px 0}
+.dont-item{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #f0f0f0}
+.dont-item p{font-size:10pt;color:#333;margin-bottom:0}
+.ch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.ch-card{padding:12px;text-align:center;border:1px solid #d5e0f0}
+.ch-card h5{font-size:9pt;font-weight:700;margin:6px 0 4px;text-transform:uppercase}
+.ch-card p{font-size:9pt;color:#555;margin-bottom:0}
+.vflow{display:flex;align-items:center;justify-content:center;gap:0;margin:16px 0;flex-wrap:wrap}
+.vflow-step{background:#f0f4ff;border:1px solid #c0d0f0;padding:12px 14px;text-align:center;width:100px}
+.vflow-num{font-size:8pt;font-weight:700;color:#fff;background:#2e4d8a;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px}
+.vflow-name{font-size:9.5pt;font-weight:700;color:#1a2a4a;margin-bottom:2px}
+.vflow-detail{font-size:8pt;color:#555}
+.vflow-arrow{font-size:16pt;color:#2e4d8a;margin:0 4px;font-weight:700}
+.tpl{border:2px dashed #c8d8f0;padding:14px 16px;margin:10px 0;background:#fafcff;display:flex;align-items:flex-start;gap:10px}
+.tpl-label{font-size:8.5pt;font-weight:700;text-transform:uppercase;color:#2e4d8a;margin-bottom:4px}
+.tpl-field{font-size:10pt;color:#999;font-style:italic;line-height:1.5}
+.dl-bar,.toc{display:none}
+.footer{text-align:center;padding:28px 0 16px;color:#666;font-size:9.5pt;border-top:1px solid #eee;margin-top:20px}</style></head><body>
+
+<div class="dl-bar">
+  <button onclick="downloadDoc()">Download as Word Document</button>
+</div>
+
+<!-- COVER -->
+<div class="cover">
+  <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom:12px"><rect x="5" y="10" width="50" height="40" rx="4" fill="none" stroke="#2e4d8a" stroke-width="2"></rect><line x1="14" y1="22" x2="46" y2="22" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></line><line x1="14" y1="30" x2="38" y2="30" stroke="#9fb8d8" stroke-width="2" stroke-linecap="round"></line><line x1="14" y1="38" x2="42" y2="38" stroke="#9fb8d8" stroke-width="2" stroke-linecap="round"></line><circle cx="48" cy="42" r="10" fill="#2e4d8a"></circle><path d="M45 42l2.5 2.5L52 39" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <div class="cover-tag">UX Writing Systems Toolkit</div>
+  <h1>Satyajit Roy</h1>
+  <div class="cover-sub">Frameworks, Templates &amp; Standards for Scalable UX Content</div>
+  <div class="cover-contact">rsatyajit77@gmail.com · linkedin.com/in/rsatyajit77 · tinyurl.com/4vn84ytc</div>
+</div>
+
+<!-- TOC -->
+<div class="toc">
+  <h3><svg width="18" height="18" viewBox="0 0 18 18"><rect x="2" y="2" width="14" height="14" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><line x1="5" y1="6" x2="13" y2="6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></line><line x1="5" y1="9" x2="11" y2="9" stroke="#9fb8d8" stroke-width="1.5" stroke-linecap="round"></line><line x1="5" y1="12" x2="13" y2="12" stroke="#9fb8d8" stroke-width="1.5" stroke-linecap="round"></line></svg> Documents</h3>
+  <a href="#d1"><span class="toc-n">01</span> Voice &amp; Tone Guide</a>
+  <a href="#d2"><span class="toc-n">02</span> UX Writing Style Guide</a>
+  <a href="#d3"><span class="toc-n">03</span> Content Audit &amp; Heuristic Report</a>
+  <a href="#d4"><span class="toc-n">04</span> UX Copy Deck / Annotation Template</a>
+  <a href="#d5"><span class="toc-n">05</span> Notification &amp; Messaging Matrix</a>
+  <a href="#d6"><span class="toc-n">06</span> Content Decision Trees</a>
+  <a href="#d7"><span class="toc-n">07</span> UX Writing Process Document</a>
+</div>
+
+
+<!-- ==================== DOC 1: VOICE & TONE ==================== -->
+<div class="doc" id="d1">
+<div class="doc-header">
+  <svg class="doc-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="rgba(255,255,255,0.1)"></circle><path d="M22 24c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"></path><rect x="18" y="28" width="28" height="18" rx="4" fill="none" stroke="#fff" stroke-width="2.5"></rect><circle cx="28" cy="37" r="2.5" fill="#9fb8d8"></circle><circle cx="36" cy="37" r="2.5" fill="#9fb8d8"></circle><path d="M28 42c1.5 1.5 4.5 1.5 8 0" stroke="#9fb8d8" stroke-width="2" fill="none" stroke-linecap="round"></path></svg>
+  <div class="doc-header-text">
+    <div class="doc-num">Document 01</div>
+    <div class="doc-title">Voice &amp; Tone Guide</div>
+    <div class="doc-sub">How the product speaks — and how it adjusts across contexts</div>
+  </div>
+</div>
+<div class="doc-purpose">
+  <svg class="purpose-icon" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M10 6v5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="#2e4d8a"></circle></svg>
+  <p><strong>What this proves:</strong> You can define and scale a content system across an entire product, not just write one-off copy. You think about consistency, brand coherence, and emotional appropriateness in different contexts.</p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M8 4v4l3 2" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> Product Voice — Core Attributes</h3>
+<p>Voice is who we are. It stays the same everywhere. Tone is how we adjust to the moment.</p>
+
+<div class="voice-grid">
+  <div class="voice-card">
+    <div class="ic ic-blue"><svg width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="8" fill="none" stroke="#2e4d8a" stroke-width="1.8"></circle><path d="M8 11l2 2 4-4" stroke="#2e4d8a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+    <div class="voice-card-text">
+      <h4>Clear</h4>
+      <p>Plain language. Short sentences. No jargon unless the user speaks it daily. We respect intelligence without requiring translation.</p>
+      <div class="ex-do">✓ "Your payment is processing"</div>
+      <div class="ex-dont">✗ "Transaction initiated pending settlement"</div>
+    </div>
+  </div>
+  <div class="voice-card">
+    <div class="ic ic-green"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 4v6l4 3" stroke="#1a6b30" stroke-width="1.8" fill="none" stroke-linecap="round"></path><circle cx="11" cy="11" r="8" fill="none" stroke="#1a6b30" stroke-width="1.8"></circle></svg></div>
+    <div class="voice-card-text">
+      <h4>Helpful</h4>
+      <p>Every message moves the user forward. No dead ends. We guide without over-explaining.</p>
+      <div class="ex-do">✓ "Try a shorter search term"</div>
+      <div class="ex-dont">✗ "No results found"</div>
+    </div>
+  </div>
+  <div class="voice-card">
+    <div class="ic ic-amber"><svg width="22" height="22" viewBox="0 0 22 22"><rect x="3" y="3" width="16" height="16" rx="3" fill="none" stroke="#b45309" stroke-width="1.8"></rect><line x1="11" y1="7" x2="11" y2="12" stroke="#b45309" stroke-width="2" stroke-linecap="round"></line><circle cx="11" cy="15" r="1" fill="#b45309"></circle></svg></div>
+    <div class="voice-card-text">
+      <h4>Honest</h4>
+      <p>Say what happened. Don't minimize problems or overpromise fixes. Direct without being cold.</p>
+      <div class="ex-do">✓ "This is taking longer than usual"</div>
+      <div class="ex-dont">✗ "Loading..."</div>
+    </div>
+  </div>
+  <div class="voice-card">
+    <div class="ic ic-blue"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M6 14c0 0 2.5 4 5 4s5-4 5-4" stroke="#2e4d8a" stroke-width="1.8" fill="none" stroke-linecap="round"></path><path d="M6 8c0 0 2.5-4 5-4s5 4 5 4" stroke="#2e4d8a" stroke-width="1.8" fill="none" stroke-linecap="round"></path></svg></div>
+    <div class="voice-card-text">
+      <h4>Calm</h4>
+      <p>Even under pressure, the product stays steady. We're warm, just not anxious.</p>
+      <div class="ex-do">✓ "Something went wrong. We're looking into it."</div>
+      <div class="ex-dont">✗ "OOPS! 😅 Something broke!"</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="1" y="7" width="14" height="2" rx="1" fill="#2e4d8a"></rect><rect x="3" y="4" width="2" height="8" rx="1" fill="#9fb8d8"></rect><rect x="7" y="2" width="2" height="12" rx="1" fill="#2e4d8a"></rect><rect x="11" y="5" width="2" height="6" rx="1" fill="#9fb8d8"></rect></svg> Tone Spectrum</h3>
+<p>The voice stays constant. The tone adjusts based on what the user is experiencing:</p>
+
+<div class="spectrum">
+  <div class="spec-col">
+    <div class="spec-icon"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="11" fill="none" stroke="#c0392b" stroke-width="2"></circle><line x1="9" y1="9" x2="19" y2="19" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></line><line x1="19" y1="9" x2="9" y2="19" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></line></svg></div>
+    <div class="spec-label" style="color:#9a2020">Critical Error</div>
+    <div class="spec-tone">Serious, steady</div>
+    <div class="spec-ex">No humor. No emoji. State problem. Show fix.</div>
+  </div>
+  <div class="spec-col">
+    <div class="spec-icon"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M14 5L25 23H3L14 5z" fill="none" stroke="#b45309" stroke-width="2" stroke-linejoin="round"></path><line x1="14" y1="12" x2="14" y2="17" stroke="#b45309" stroke-width="2" stroke-linecap="round"></line><circle cx="14" cy="20" r="1" fill="#b45309"></circle></svg></div>
+    <div class="spec-label" style="color:#b45309">Warning</div>
+    <div class="spec-tone">Direct, protective</div>
+    <div class="spec-ex">Clear consequence. Explain what happens next.</div>
+  </div>
+  <div class="spec-col">
+    <div class="spec-icon"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="11" fill="none" stroke="#7a6a00" stroke-width="2"></circle><line x1="9" y1="14" x2="19" y2="14" stroke="#7a6a00" stroke-width="2" stroke-linecap="round"></line></svg></div>
+    <div class="spec-label" style="color:#7a6a00">Neutral</div>
+    <div class="spec-tone">Factual, efficient</div>
+    <div class="spec-ex">Confirmations, settings. No personality needed.</div>
+  </div>
+  <div class="spec-col">
+    <div class="spec-icon"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="11" fill="none" stroke="#1a6b30" stroke-width="2"></circle><path d="M10 14l3 3 5-6" stroke="#1a6b30" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+    <div class="spec-label" style="color:#1a6b30">Encourage</div>
+    <div class="spec-tone">Warm, supportive</div>
+    <div class="spec-ex">Milestones, first completions. Brief warmth.</div>
+  </div>
+  <div class="spec-col">
+    <div class="spec-icon"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M14 4l3 6h7l-5.5 4.5 2 7L14 17l-6.5 4.5 2-7L4 10h7l3-6z" fill="none" stroke="#1a5a8a" stroke-width="2" stroke-linejoin="round"></path></svg></div>
+    <div class="spec-label" style="color:#1a5a8a">Celebrate</div>
+    <div class="spec-tone">Energized, genuine</div>
+    <div class="spec-ex">Goals met, achievements. Can be lively.</div>
+  </div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><line x1="5" y1="5.5" x2="11" y2="5.5" stroke="#2e4d8a" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="8" x2="9" y2="8" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="10.5" x2="11" y2="10.5" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line></svg> Context-Specific Tone Table</h3>
+<table>
+<tbody><tr><th>Context</th><th>Tone</th><th>✓ Do</th><th>✗ Don't</th></tr>
+<tr><td>Onboarding</td><td>Warm, guiding</td><td>"Let's get you set up — takes about 2 minutes."</td><td>"Welcome!!! We're SO excited!!! 🎉🎉"</td></tr>
+<tr><td>Error / failure</td><td>Calm, helpful</td><td>"That didn't go through. Here's what to try."</td><td>"Oops! Something went wrong 😬"</td></tr>
+<tr><td>Success</td><td>Factual + warmth</td><td>"Payment sent. Arrives within 2 hours."</td><td>"YAYYY! Money's on its way! 💸💸"</td></tr>
+<tr><td>Empty state</td><td>Encouraging</td><td>"Your reports show up here once you add a project."</td><td>"Nothing to see here!"</td></tr>
+<tr><td>Destructive</td><td>Serious, specific</td><td>"Delete this project? Removes all tasks. Can't undo."</td><td>"Are you sure? 🤔"</td></tr>
+<tr><td>Re-engagement</td><td>Low-pressure</td><td>"Your workspace is ready whenever you are."</td><td>"We miss you! Come back! 😢"</td></tr>
+<tr><td>Sensitive / health</td><td>Respectful</td><td>"Breaks happen. Start from today."</td><td>"You haven't logged in for 5 days!"</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#c0392b" stroke-width="1.5"></circle><line x1="5" y1="5" x2="11" y2="11" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line><line x1="11" y1="5" x2="5" y2="11" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line></svg> Voice Don'ts</h3>
+<div class="dont-list">
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><line x1="6" y1="6" x2="12" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line><line x1="12" y1="6" x2="6" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line></svg><p>Never use "Oops" or "Uh oh" in error states. Errors aren't cute when the user is stressed.</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><line x1="6" y1="6" x2="12" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line><line x1="12" y1="6" x2="6" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line></svg><p>Never use exclamation marks in error or warning copy. Reserve them for celebrations only.</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><line x1="6" y1="6" x2="12" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line><line x1="12" y1="6" x2="6" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line></svg><p>Never guilt users into action ("We miss you!", "Don't give up!").</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><line x1="6" y1="6" x2="12" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line><line x1="12" y1="6" x2="6" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line></svg><p>Never use emoji in error, warning, or destructive action contexts.</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><line x1="6" y1="6" x2="12" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line><line x1="12" y1="6" x2="6" y2="12" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line></svg><p>Never end a message at the problem without offering a next step.</p></div>
+</div>
+
+<div class="tpl">
+  <svg width="20" height="20" viewBox="0 0 20 20" style="flex-shrink:0;margin-top:2px"><rect x="3" y="3" width="14" height="14" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5" stroke-dasharray="3 2"></rect><path d="M10 7v6M7 10h6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path></svg>
+  <div class="tpl-text"><div class="tpl-label">Customize</div><div class="tpl-field">Swap in your product's brand adjectives. Pull real before/after examples from your past work. Add any industry-specific tone considerations (healthcare sensitivity, financial compliance language).</div></div>
+</div>
+</div>
+
+
+<!-- ==================== DOC 2: STYLE GUIDE ==================== -->
+<div class="doc" id="d2">
+<div class="doc-header">
+  <svg class="doc-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="rgba(255,255,255,0.1)"></circle><rect x="16" y="14" width="32" height="36" rx="3" fill="none" stroke="#fff" stroke-width="2.5"></rect><line x1="22" y1="22" x2="42" y2="22" stroke="#9fb8d8" stroke-width="2" stroke-linecap="round"></line><line x1="22" y1="28" x2="36" y2="28" stroke="#9fb8d8" stroke-width="2" stroke-linecap="round"></line><line x1="22" y1="34" x2="40" y2="34" stroke="#fff" stroke-width="2" stroke-linecap="round"></line><line x1="22" y1="40" x2="34" y2="40" stroke="#9fb8d8" stroke-width="2" stroke-linecap="round"></line></svg>
+  <div class="doc-header-text">
+    <div class="doc-num">Document 02</div>
+    <div class="doc-title">UX Writing Style Guide</div>
+    <div class="doc-sub">Rules for consistent, scalable microcopy across the product</div>
+  </div>
+</div>
+<div class="doc-purpose">
+  <svg class="purpose-icon" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M10 6v5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="#2e4d8a"></circle></svg>
+  <p><strong>What this proves:</strong> You think about consistency at scale. You've considered the edge cases (abbreviations, date formats, punctuation in buttons) that cause inconsistency across teams.</p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 12L8 3l5 9H3z" fill="none" stroke="#2e4d8a" stroke-width="1.5" stroke-linejoin="round"></path></svg> Capitalization Rules</h3>
+<table>
+<tbody><tr><th>Element</th><th>Rule</th><th>✓ Example</th><th>✗ Not this</th></tr>
+<tr><td>Page titles</td><td>Title Case</td><td>Account Settings</td><td>Account settings</td></tr>
+<tr><td>Section headings</td><td>Sentence case</td><td>Manage your notifications</td><td>Manage Your Notifications</td></tr>
+<tr><td>Buttons</td><td>Sentence case</td><td>Save changes</td><td>Save Changes</td></tr>
+<tr><td>Labels</td><td>Sentence case</td><td>Email address</td><td>Email Address</td></tr>
+<tr><td>Tooltips</td><td>Sentence case</td><td>Click to expand all rows</td><td>Click To Expand All Rows</td></tr>
+<tr><td>Error messages</td><td>Sentence case</td><td>That email is already registered</td><td>THAT EMAIL IS ALREADY REGISTERED</td></tr>
+<tr><td>Menu items</td><td>Title Case</td><td>Billing &amp; Payments</td><td>billing &amp; payments</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="13" r="1.5" fill="#2e4d8a"></circle><circle cx="8" cy="8" r="1.5" fill="#2e4d8a"></circle><line x1="8" y1="2" x2="8" y2="5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></line></svg> Punctuation Standards</h3>
+<table>
+<tbody><tr><th>Rule</th><th>✓ Do</th><th>✗ Don't</th></tr>
+<tr><td>Buttons: no periods</td><td>Save changes</td><td>Save changes.</td></tr>
+<tr><td>Tooltips: period for full sentences only</td><td>"Click to expand" or "This shows your total."</td><td>"Click to expand."</td></tr>
+<tr><td>Error messages: period at end</td><td>That email is already registered.</td><td>That email is already registered</td></tr>
+<tr><td>Oxford comma: always</td><td>Tasks, projects, and deadlines</td><td>Tasks, projects and deadlines</td></tr>
+<tr><td>Exclamation marks: max 1 per screen</td><td>Welcome back!</td><td>Welcome! You have messages! Check them!</td></tr>
+<tr><td>Ellipsis: loading/truncation only</td><td>Saving...</td><td>Learn more...</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="5" width="12" height="6" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><path d="M5 8h6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path><path d="M9 6v4" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path></svg> Button &amp; CTA Labels</h3>
+<table>
+<tbody><tr><th>Principle</th><th>✓ Do</th><th>✗ Don't</th></tr>
+<tr><td>Lead with a verb</td><td>Download report</td><td>Report download</td></tr>
+<tr><td>Be specific</td><td>Save and continue</td><td>Submit</td></tr>
+<tr><td>Match button to heading</td><td>"Delete project?" → <strong>Delete project</strong></td><td>"Delete project?" → <strong>OK</strong></td></tr>
+<tr><td>Primary = strong verb, Secondary = soft</td><td>Primary: "Delete project" / Secondary: "Keep project"</td><td>Primary: "Yes" / Secondary: "No"</td></tr>
+<tr><td>Max 5 words (3 ideal)</td><td>Send invitation</td><td>Click here to send an invitation</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><line x1="5" y1="6" x2="11" y2="6" stroke="#9fb8d8" stroke-width="1" stroke-linecap="round"></line><text x="5" y="12" font-size="7" fill="#2e4d8a" font-weight="700">12</text></svg> Dates, Times &amp; Numbers</h3>
+<table>
+<tbody><tr><th>Element</th><th>Format</th><th>Example</th></tr>
+<tr><td>Date (full)</td><td>DD Mon YYYY</td><td>03 Apr 2026</td></tr>
+<tr><td>Date (relative, &lt;7d)</td><td>Relative</td><td>Today, Yesterday, 3 days ago</td></tr>
+<tr><td>Time</td><td>12-hour, no leading zero</td><td>2:30 PM</td></tr>
+<tr><td>Numbers 1-9</td><td>Spell out</td><td>three tasks remaining</td></tr>
+<tr><td>Numbers 10+</td><td>Numerals</td><td>14 tasks remaining</td></tr>
+<tr><td>Currency</td><td>Symbol + number</td><td>₹5,000 (not ₹5,000.00)</td></tr>
+<tr><td>Large numbers</td><td>Abbreviated</td><td>₹12L or 1.2M users</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 3h10v10H3z" fill="none" stroke="#2e4d8a" stroke-width="1.5"></path><path d="M6 3v10M3 8h10" stroke="#2e4d8a" stroke-width="1"></path></svg> Terminology Glossary</h3>
+<table>
+<tbody><tr><th>✓ Use this</th><th>✗ Not this</th><th>Why</th></tr>
+<tr><td>Sign in</td><td>Log in, Login, Sign on</td><td>One term everywhere reduces cognitive load</td></tr>
+<tr><td>Sign up</td><td>Register, Create account, Join</td><td>Consistent pair with "Sign in"</td></tr>
+<tr><td>Email address</td><td>Email, E-mail, Email ID</td><td>Avoids ambiguity with "email" (the message)</td></tr>
+<tr><td>Settings</td><td>Preferences, Options, Config</td><td>Most universally understood label</td></tr>
+</tbody></table>
+
+<div class="tpl">
+  <svg width="20" height="20" viewBox="0 0 20 20" style="flex-shrink:0;margin-top:2px"><rect x="3" y="3" width="14" height="14" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5" stroke-dasharray="3 2"></rect><path d="M10 7v6M7 10h6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path></svg>
+  <div class="tpl-text"><div class="tpl-label">Customize</div><div class="tpl-field">Add product-specific terms (feature names, plan names, user roles), localization rules (date format per region), and domain-specific number formatting.</div></div>
+</div>
+</div>
+
+
+<!-- ==================== DOC 3: CONTENT AUDIT ==================== -->
+<div class="doc" id="d3">
+<div class="doc-header">
+  <svg class="doc-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="rgba(255,255,255,0.1)"></circle><circle cx="28" cy="28" r="12" fill="none" stroke="#fff" stroke-width="2.5"></circle><line x1="36" y1="36" x2="46" y2="46" stroke="#fff" stroke-width="3" stroke-linecap="round"></line><path d="M24 28l3 3 5-6" stroke="#9fb8d8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <div class="doc-header-text">
+    <div class="doc-num">Document 03</div>
+    <div class="doc-title">Content Audit &amp; Heuristic Report</div>
+    <div class="doc-sub">Structured evaluation of existing UX copy quality</div>
+  </div>
+</div>
+<div class="doc-purpose">
+  <svg class="purpose-icon" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M10 6v5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="#2e4d8a"></circle></svg>
+  <p><strong>What this proves:</strong> You can walk into an existing product, systematically evaluate its copy, prioritize fixes, and communicate findings. This is the diagnostic skill that separates senior from junior.</p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><path d="M5 8h6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path><path d="M8 5v6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path></svg> 8-Point Heuristic Framework</h3>
+<p>Score each heuristic 1 (poor) to 5 (excellent) per screen or flow.</p>
+<table>
+<tbody><tr><th>#</th><th>Heuristic</th><th>Evaluating</th><th>Score 1</th><th>Score 5</th></tr>
+<tr><td>1</td><td><strong>Clarity</strong></td><td>Understandable on first read?</td><td>Jargon, ambiguity</td><td>Instantly clear</td></tr>
+<tr><td>2</td><td><strong>Actionability</strong></td><td>Tells user what to do next?</td><td>Dead ends</td><td>Clear next action</td></tr>
+<tr><td>3</td><td><strong>Consistency</strong></td><td>Same terms &amp; tone across product?</td><td>"Log in" here, "Sign in" there</td><td>One pattern everywhere</td></tr>
+<tr><td>4</td><td><strong>Tone fit</strong></td><td>Tone matches user's emotional state?</td><td>Cheerful errors</td><td>Context-calibrated</td></tr>
+<tr><td>5</td><td><strong>Brevity</strong></td><td>Every word earning its place?</td><td>50% could be cut</td><td>Nothing wasted</td></tr>
+<tr><td>6</td><td><strong>Accessibility</strong></td><td>Usable by screen readers, keyboard?</td><td>Missing labels</td><td>Full ARIA compliance</td></tr>
+<tr><td>7</td><td><strong>Error handling</strong></td><td>Errors guide recovery?</td><td>"Invalid input"</td><td>Explains + shows fix</td></tr>
+<tr><td>8</td><td><strong>Empowerment</strong></td><td>Users feel capable, not dependent?</td><td>"Contact admin"</td><td>Self-serve paths</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><line x1="5" y1="5.5" x2="8" y2="5.5" stroke="#2e4d8a" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="8" x2="11" y2="8" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="10.5" x2="9" y2="10.5" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line></svg> Finding Documentation Template</h3>
+<table>
+<tbody><tr><th>Field</th><th>What goes here</th></tr>
+<tr><td><strong>Finding ID</strong></td><td>CA-001, CA-002, etc.</td></tr>
+<tr><td><strong>Screen / Flow</strong></td><td>Where this issue lives</td></tr>
+<tr><td><strong>Heuristic violated</strong></td><td>Which of the 8</td></tr>
+<tr><td><strong>Severity</strong></td><td>P1 (critical), P2 (high), P3 (medium)</td></tr>
+<tr><td><strong>Current copy</strong></td><td>Exact text as-is</td></tr>
+<tr><td><strong>Problem</strong></td><td>What's wrong and why</td></tr>
+<tr><td><strong>Recommended copy</strong></td><td>Proposed rewrite</td></tr>
+<tr><td><strong>Rationale</strong></td><td>Behavioral or research reasoning</td></tr>
+</tbody></table>
+
+<div class="ex">
+  <div class="ex-label"><svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="#e0e8ff"></circle><path d="M5 7l1.5 1.5L9 5.5" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> Sample Finding</div>
+  <p><strong>CA-007</strong> · Payment confirmation · Heuristic: Actionability · <strong>P2</strong></p>
+  <p><strong>Current:</strong> "Transaction complete."</p>
+  <p><strong>Problem:</strong> No next step. User doesn't know when payment arrives or where to find receipt.</p>
+  <p><strong>Recommended:</strong> "Payment sent. ₹5,000 will reach [Recipient] within 2 hours. View receipt."</p>
+  <p><strong>Rationale:</strong> Post-action copy should close the cognitive loop: what happened + when + what's next.</p>
+</div>
+</div>
+
+
+<!-- ==================== DOC 4: COPY DECK ==================== -->
+<div class="doc" id="d4">
+<div class="doc-header">
+  <svg class="doc-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="rgba(255,255,255,0.1)"></circle><rect x="12" y="18" width="28" height="28" rx="3" fill="none" stroke="#fff" stroke-width="2.5"></rect><rect x="24" y="12" width="28" height="28" rx="3" fill="none" stroke="#9fb8d8" stroke-width="2"></rect><line x1="18" y1="26" x2="34" y2="26" stroke="#9fb8d8" stroke-width="1.5" stroke-linecap="round"></line><line x1="18" y1="31" x2="30" y2="31" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></line><line x1="18" y1="36" x2="34" y2="36" stroke="#9fb8d8" stroke-width="1.5" stroke-linecap="round"></line></svg>
+  <div class="doc-header-text">
+    <div class="doc-num">Document 04</div>
+    <div class="doc-title">UX Copy Deck / Annotation Template</div>
+    <div class="doc-sub">Screen-by-screen copy documentation for design &amp; engineering handoff</div>
+  </div>
+</div>
+<div class="doc-purpose">
+  <svg class="purpose-icon" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M10 6v5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="#2e4d8a"></circle></svg>
+  <p><strong>What this proves:</strong> You know how to hand off copy in a structured, unambiguous way. You've thought about character limits, variants, edge cases, and rationale.</p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 3h10v10H3z" fill="none" stroke="#2e4d8a" stroke-width="1.5"></path><path d="M6 3v10M3 8h10" stroke="#2e4d8a" stroke-width="1"></path></svg> Copy Deck Field Structure</h3>
+<table>
+<tbody><tr><th>Field</th><th>What goes here</th><th>Example</th></tr>
+<tr><td><strong>Screen ID</strong></td><td>Match to Figma frame</td><td>ONB-03</td></tr>
+<tr><td><strong>Screen name</strong></td><td>Human-readable label</td><td>Goal Selection</td></tr>
+<tr><td><strong>Element</strong></td><td>UI component</td><td>Heading, CTA, helper text</td></tr>
+<tr><td><strong>Copy</strong></td><td>Final text</td><td>"What are you preparing for?"</td></tr>
+<tr><td><strong>Char count</strong></td><td>Actual characters</td><td>30</td></tr>
+<tr><td><strong>Max chars</strong></td><td>Limit for this element</td><td>40</td></tr>
+<tr><td><strong>Variants</strong></td><td>Conditional copy by state</td><td>Returning: "Welcome back — pick up where you left off"</td></tr>
+<tr><td><strong>Edge cases</strong></td><td>Long names, missing data, zero states</td><td>Name &gt;20 chars → truncate with "..."</td></tr>
+<tr><td><strong>Rationale</strong></td><td>Why this copy</td><td>Research: 80% arrive with specific goal (CS5)</td></tr>
+<tr><td><strong>Status</strong></td><td>Workflow state</td><td>Draft / Review / Approved / Shipped</td></tr>
+</tbody></table>
+
+<div class="ex">
+  <div class="ex-label"><svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="#e0e8ff"></circle><path d="M5 7l1.5 1.5L9 5.5" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> Sample Entry — ONB-03: Goal Selection</div>
+  <table>
+  <tbody><tr><th>Element</th><th>Copy</th><th>Chars</th><th>Max</th><th>Notes</th></tr>
+  <tr><td>Heading</td><td>What are you preparing for?</td><td>30</td><td>40</td><td>Question format drives engagement</td></tr>
+  <tr><td>Subheading</td><td>Tell us your goal and we'll build your study path.</td><td>48</td><td>60</td><td>Sets personalisation expectation</td></tr>
+  <tr><td>Option 1</td><td>SSC Exams</td><td>9</td><td>20</td><td>Highest-volume segment</td></tr>
+  <tr><td>Option 2</td><td>Bank PO/Clerk</td><td>13</td><td>20</td><td>—</td></tr>
+  <tr><td>Skip link</td><td>I'll browse on my own</td><td>21</td><td>30</td><td>Exit ramp for resistors</td></tr>
+  </tbody></table>
+  <p style="margin-top:8px;font-size:9.5pt;color:#666"><strong>Edge cases:</strong> API failure → "We're having trouble loading options. Try refreshing, or browse all courses." Returning user → skip screen entirely.</p>
+</div>
+
+<div class="tpl">
+  <svg width="20" height="20" viewBox="0 0 20 20" style="flex-shrink:0;margin-top:2px"><rect x="3" y="3" width="14" height="14" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5" stroke-dasharray="3 2"></rect><path d="M10 7v6M7 10h6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path></svg>
+  <div class="tpl-text"><div class="tpl-label">Customize</div><div class="tpl-field">Build in Google Sheets or Airtable. Map Screen IDs to Figma frames. Share via linked comments for each screen. Add columns for localization variants if multi-language.</div></div>
+</div>
+</div>
+
+
+<!-- ==================== DOC 5: NOTIFICATION MATRIX ==================== -->
+<div class="doc" id="d5">
+<div class="doc-header">
+  <svg class="doc-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="rgba(255,255,255,0.1)"></circle><path d="M32 16c-8 0-14 6-14 14v8l-4 4h36l-4-4v-8c0-8-6-14-14-14z" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"></path><circle cx="32" cy="48" r="4" fill="none" stroke="#9fb8d8" stroke-width="2"></circle><circle cx="40" cy="20" r="6" fill="#e74c3c" stroke="#1a2a4a" stroke-width="1.5"></circle></svg>
+  <div class="doc-header-text">
+    <div class="doc-num">Document 05</div>
+    <div class="doc-title">Notification &amp; Messaging Matrix</div>
+    <div class="doc-sub">Strategic framework for cross-channel messaging</div>
+  </div>
+</div>
+<div class="doc-purpose">
+  <svg class="purpose-icon" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M10 6v5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="#2e4d8a"></circle></svg>
+  <p><strong>What this proves:</strong> You think about messaging as a system. You understand channel constraints, frequency management, and how tone shifts based on urgency and context.</p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><line x1="5" y1="5.5" x2="11" y2="5.5" stroke="#2e4d8a" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="8" x2="11" y2="8" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="10.5" x2="11" y2="10.5" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line></svg> Notification Types</h3>
+<table>
+<tbody><tr><th>Type</th><th>Purpose</th><th>Urgency</th><th>Example</th></tr>
+<tr><td><strong>Transactional</strong></td><td>Confirm user's action</td><td>Immediate</td><td>Payment received, file uploaded</td></tr>
+<tr><td><strong>System</strong></td><td>Product status</td><td>Varies</td><td>Maintenance, new feature, policy change</td></tr>
+<tr><td><strong>Behavioral</strong></td><td>Nudge toward action</td><td>Low</td><td>Complete profile, try feature</td></tr>
+<tr><td><strong>Social</strong></td><td>Other users' actions</td><td>Medium</td><td>Comment, mention, team update</td></tr>
+<tr><td><strong>Re-engagement</strong></td><td>Bring back inactive user</td><td>Low</td><td>Workspace ready, what you missed</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 3h10v10H3z" fill="none" stroke="#2e4d8a" stroke-width="1.5"></path><path d="M6 3v10M3 8h10" stroke="#2e4d8a" stroke-width="1"></path></svg> Channel Matrix</h3>
+<table>
+<tbody><tr><th>Type</th><th>Push</th><th>In-App</th><th>Email</th><th>SMS</th></tr>
+<tr><td><strong>Transactional</strong></td><td>✓ Short confirm</td><td>✓ Persistent</td><td>✓ With details</td><td>High-value only</td></tr>
+<tr><td><strong>System</strong></td><td>Urgent only</td><td>✓ Banner/modal</td><td>✓ Scheduled</td><td>Security only</td></tr>
+<tr><td><strong>Behavioral</strong></td><td>Max 1/day</td><td>✓ Non-blocking</td><td>Max 2/week</td><td>✗ Never</td></tr>
+<tr><td><strong>Social</strong></td><td>Batch if &gt;3/hr</td><td>✓ Activity feed</td><td>Digest only</td><td>✗ Never</td></tr>
+<tr><td><strong>Re-engage</strong></td><td>Max 1 per lapse</td><td>N/A</td><td>Max 3 total</td><td>Max 1 after 14d</td></tr>
+</tbody></table>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M8 4v4l3 2" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> Channel Copy Constraints</h3>
+<div class="ch-grid">
+  <div class="ch-card" style="background:linear-gradient(135deg,#f0f4ff,#e0e8ff)">
+    <svg width="28" height="28" viewBox="0 0 28 28"><rect x="6" y="4" width="16" height="20" rx="3" fill="none" stroke="#2e4d8a" stroke-width="2"></rect><line x1="11" y1="20" x2="17" y2="20" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></line></svg>
+    <h5>Push</h5>
+    <p>Title: 50 chars. Body: 100 chars. Action-oriented. No fluff.</p>
+  </div>
+  <div class="ch-card" style="background:linear-gradient(135deg,#e8f5e9,#d4ecd6)">
+    <svg width="28" height="28" viewBox="0 0 28 28"><rect x="4" y="6" width="20" height="16" rx="3" fill="none" stroke="#1a6b30" stroke-width="2"></rect><line x1="9" y1="12" x2="19" y2="12" stroke="#1a6b30" stroke-width="1.5" stroke-linecap="round"></line><line x1="9" y1="16" x2="15" y2="16" stroke="#1a6b30" stroke-width="1.5" stroke-linecap="round"></line></svg>
+    <h5>In-App</h5>
+    <p>Toast: 80 chars. Banner: 120. Modal: 200. Match screen tone.</p>
+  </div>
+  <div class="ch-card" style="background:linear-gradient(135deg,#fff3e0,#ffe8c8)">
+    <svg width="28" height="28" viewBox="0 0 28 28"><rect x="4" y="7" width="20" height="14" rx="2" fill="none" stroke="#b45309" stroke-width="2"></rect><path d="M4 9l10 7 10-7" stroke="#b45309" stroke-width="2" fill="none" stroke-linejoin="round"></path></svg>
+    <h5>Email</h5>
+    <p>Subject: 50 chars. Preview: 90. Warmer than in-app.</p>
+  </div>
+  <div class="ch-card" style="background:linear-gradient(135deg,#fde8e8,#fdd)">
+    <svg width="28" height="28" viewBox="0 0 28 28"><path d="M8 4h12a4 4 0 014 4v8a4 4 0 01-4 4H12l-6 4v-4a4 4 0 01-2-3.5V8a4 4 0 014-4z" fill="none" stroke="#c0392b" stroke-width="2"></path></svg>
+    <h5>SMS</h5>
+    <p>160 chars max. No greeting. Ultra-concise. Get to it.</p>
+  </div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#c0392b" stroke-width="1.5"></circle><line x1="8" y1="4" x2="8" y2="9" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></line><circle cx="8" cy="12" r="1" fill="#c0392b"></circle></svg> Frequency Rules</h3>
+<div class="dont-list">
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><path d="M6 9h6" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></path></svg><p><strong>Hard cap:</strong> Max 3 push notifications per day per user, regardless of type.</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><path d="M6 9h6" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></path></svg><p><strong>Batch:</strong> 3+ social notifications in 1 hour → combine: "3 people commented on your project."</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><path d="M6 9h6" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></path></svg><p><strong>Quiet hours:</strong> No push or SMS between 9 PM and 8 AM user local time.</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><path d="M6 9h6" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></path></svg><p><strong>Cool-off:</strong> 3 ignored behavioral nudges → pause that type for 14 days.</p></div>
+  <div class="dont-item"><svg class="dont-x" width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="#fde8e8"></circle><path d="M6 9h6" stroke="#c0392b" stroke-width="2" stroke-linecap="round"></path></svg><p><strong>Opt-out:</strong> Immediate. No "Are you sure?" No guilt on the unsubscribe screen.</p></div>
+</div>
+</div>
+
+
+<!-- ==================== DOC 6: DECISION TREES ==================== -->
+<div class="doc" id="d6">
+<div class="doc-header">
+  <svg class="doc-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="rgba(255,255,255,0.1)"></circle><circle cx="32" cy="16" r="6" fill="none" stroke="#fff" stroke-width="2.5"></circle><circle cx="18" cy="38" r="6" fill="none" stroke="#9fb8d8" stroke-width="2"></circle><circle cx="46" cy="38" r="6" fill="none" stroke="#9fb8d8" stroke-width="2"></circle><line x1="28" y1="21" x2="20" y2="33" stroke="#fff" stroke-width="2"></line><line x1="36" y1="21" x2="44" y2="33" stroke="#fff" stroke-width="2"></line><circle cx="10" cy="52" r="4" fill="none" stroke="#9fb8d8" stroke-width="1.5"></circle><circle cx="26" cy="52" r="4" fill="none" stroke="#9fb8d8" stroke-width="1.5"></circle><line x1="15" y1="42" x2="12" y2="48" stroke="#9fb8d8" stroke-width="1.5"></line><line x1="21" y1="42" x2="24" y2="48" stroke="#9fb8d8" stroke-width="1.5"></line></svg>
+  <div class="doc-header-text">
+    <div class="doc-num">Document 06</div>
+    <div class="doc-title">Content Decision Trees</div>
+    <div class="doc-sub">Frameworks for common UX writing judgment calls</div>
+  </div>
+</div>
+<div class="doc-purpose">
+  <svg class="purpose-icon" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M10 6v5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="#2e4d8a"></circle></svg>
+  <p><strong>What this proves:</strong> You've codified your decisions into repeatable frameworks any team member can follow. Your thinking scales beyond you.</p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="4" r="3" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><line x1="8" y1="7" x2="8" y2="13" stroke="#2e4d8a" stroke-width="1.5"></line><line x1="4" y1="13" x2="12" y2="13" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></line></svg> Decision 1: What UI Pattern?</h3>
+<div class="dtree">
+  <div class="dtree-q"><svg width="18" height="18" viewBox="0 0 18 18" style="flex-shrink:0"><circle cx="9" cy="9" r="8" fill="#e6c85a"></circle><text x="9" y="13" text-anchor="middle" font-size="12" font-weight="700" fill="#7a4a00">?</text></svg> Is the message blocking the user from proceeding?</div>
+  <div class="dtree-branch">
+    <div class="dtree-a"><span class="dtree-yes">YES</span> Is it recoverable?</div>
+    <div class="dtree-branch">
+      <div class="dtree-a"><span class="dtree-yes">YES</span></div>
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e8f5e9"></rect><path d="M4 7l2 2 4-4" stroke="#1a6b30" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> Inline error below the field. Never a modal for recoverable errors.</div>
+      <div class="dtree-a"><span class="dtree-no">NO</span> High-consequence? (data loss, payment)</div>
+      <div class="dtree-branch">
+        <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#fff3e0"></rect><text x="7" y="10.5" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">!</text></svg> YES → Modal dialog with clear actions + explanation.</div>
+        <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e3f2fd"></rect><line x1="4" y1="7" x2="10" y2="7" stroke="#1a5a8a" stroke-width="1.5" stroke-linecap="round"></line></svg> NO → Full-screen error with recovery path.</div>
+      </div>
+    </div>
+    <div class="dtree-a"><span class="dtree-no">NO</span> Is it time-sensitive?</div>
+    <div class="dtree-branch">
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e8f5e9"></rect><path d="M4 7l2 2 4-4" stroke="#1a6b30" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> YES → Toast (auto-dismiss 5s, with undo if applicable).</div>
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e3f2fd"></rect><line x1="4" y1="7" x2="10" y2="7" stroke="#1a5a8a" stroke-width="1.5" stroke-linecap="round"></line></svg> NO → Banner (persistent) or inline contextual note.</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M6 6c0-1.5 4-1.5 4 0s-2 1.5-2 3" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round"></path><circle cx="8" cy="12" r="0.8" fill="#2e4d8a"></circle></svg> Decision 2: Use Humor?</h3>
+<div class="dtree">
+  <div class="dtree-q"><svg width="18" height="18" viewBox="0 0 18 18" style="flex-shrink:0"><circle cx="9" cy="9" r="8" fill="#e6c85a"></circle><text x="9" y="13" text-anchor="middle" font-size="12" font-weight="700" fill="#7a4a00">?</text></svg> Is the user likely frustrated, anxious, or confused right now?</div>
+  <div class="dtree-branch">
+    <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#fde8e8"></rect><line x1="4" y1="4" x2="10" y2="10" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line><line x1="10" y1="4" x2="4" y2="10" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"></line></svg> YES → No humor. Be calm, clear, helpful. (Errors, financial, sensitive data.)</div>
+    <div class="dtree-a"><span class="dtree-no">NO</span> Low-stakes, positive moment?</div>
+    <div class="dtree-branch">
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e8f5e9"></rect><path d="M4 7l2 2 4-4" stroke="#1a6b30" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> YES → Light humor OK if it fits brand voice. Brief. Never forced.</div>
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e3f2fd"></rect><line x1="4" y1="7" x2="10" y2="7" stroke="#1a5a8a" stroke-width="1.5" stroke-linecap="round"></line></svg> NO → Neutral tone. Informational copy doesn't need personality.</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><circle cx="8" cy="8" r="3" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle></svg> Decision 3: Show or Hide Help Text?</h3>
+<div class="dtree">
+  <div class="dtree-q"><svg width="18" height="18" viewBox="0 0 18 18" style="flex-shrink:0"><circle cx="9" cy="9" r="8" fill="#e6c85a"></circle><text x="9" y="13" text-anchor="middle" font-size="12" font-weight="700" fill="#7a4a00">?</text></svg> First time seeing this screen?</div>
+  <div class="dtree-branch">
+    <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e8f5e9"></rect><path d="M4 7l2 2 4-4" stroke="#1a6b30" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> YES → Show help by default (inline or auto-expanded tooltip).</div>
+    <div class="dtree-a"><span class="dtree-no">NO</span> Research shows this element confuses even returning users?</div>
+    <div class="dtree-branch">
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#fff3e0"></rect><text x="7" y="10.5" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">!</text></svg> YES → Show by default. This is a design problem, not a learning curve.</div>
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e3f2fd"></rect><line x1="4" y1="7" x2="10" y2="7" stroke="#1a5a8a" stroke-width="1.5" stroke-linecap="round"></line></svg> NO → Hide behind (?) icon. Don't clutter for users who don't need it.</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2l2.5 5h5.5l-4.5 3.5 1.7 5.5L8 12.5 2.8 16l1.7-5.5L0 7h5.5L8 2z" fill="none" stroke="#2e4d8a" stroke-width="1.2" stroke-linejoin="round"></path></svg> Decision 4: Confirmation Dialog or Undo?</h3>
+<div class="dtree">
+  <div class="dtree-q"><svg width="18" height="18" viewBox="0 0 18 18" style="flex-shrink:0"><circle cx="9" cy="9" r="8" fill="#e6c85a"></circle><text x="9" y="13" text-anchor="middle" font-size="12" font-weight="700" fill="#7a4a00">?</text></svg> Is the action reversible?</div>
+  <div class="dtree-branch">
+    <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e8f5e9"></rect><path d="M4 7l2 2 4-4" stroke="#1a6b30" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> YES → Skip confirmation. Provide Undo instead. ("Message sent. Undo.")</div>
+    <div class="dtree-a"><span class="dtree-no">NO</span> High-consequence? (permanent delete, payment, account close)</div>
+    <div class="dtree-branch">
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#fff3e0"></rect><text x="7" y="10.5" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">!</text></svg> YES → Modal: (1) What happens. (2) What can't be undone. (3) Primary = specific destructive label ("Delete 14 files"). (4) Secondary = safe exit ("Keep files").</div>
+      <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e3f2fd"></rect><line x1="4" y1="7" x2="10" y2="7" stroke="#1a5a8a" stroke-width="1.5" stroke-linecap="round"></line></svg> NO → Lightweight inline confirmation. Don't over-engineer it.</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><text x="8" y="11.5" text-anchor="middle" font-size="9" font-weight="700" fill="#2e4d8a">Ab</text></svg> Decision 5: "You" vs "We" vs Passive?</h3>
+<div class="dtree">
+  <div class="dtree-q"><svg width="18" height="18" viewBox="0 0 18 18" style="flex-shrink:0"><circle cx="9" cy="9" r="8" fill="#e6c85a"></circle><text x="9" y="13" text-anchor="middle" font-size="12" font-weight="700" fill="#7a4a00">?</text></svg> Who is doing the action?</div>
+  <div class="dtree-branch">
+    <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e8f5e9"></rect><path d="M4 7l2 2 4-4" stroke="#1a6b30" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> <strong>The user →</strong> Use "you." ("Your file is ready.")</div>
+    <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#e3f2fd"></rect><line x1="4" y1="7" x2="10" y2="7" stroke="#1a5a8a" stroke-width="1.5" stroke-linecap="round"></line></svg> <strong>The system →</strong> Use "we." ("We'll send you a confirmation.")</div>
+    <div class="dtree-result"><svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><rect x="1" y="1" width="12" height="12" rx="2" fill="#fff3e0"></rect><text x="7" y="10.5" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">!</text></svg> <strong>Something broke →</strong> Passive. No blame. ("That file couldn't be uploaded." Not "You uploaded an invalid file.")</div>
+  </div>
+</div>
+</div>
+
+
+<!-- ==================== DOC 7: PROCESS ==================== -->
+<div class="doc" id="d7">
+<div class="doc-header">
+  <svg class="doc-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="rgba(255,255,255,0.1)"></circle><path d="M16 32h32" stroke="#9fb8d8" stroke-width="2" stroke-dasharray="4 3"></path><circle cx="16" cy="32" r="5" fill="none" stroke="#fff" stroke-width="2.5"></circle><circle cx="32" cy="32" r="5" fill="none" stroke="#fff" stroke-width="2.5"></circle><circle cx="48" cy="32" r="5" fill="none" stroke="#fff" stroke-width="2.5"></circle><path d="M14 22l4 4-4 4" stroke="#9fb8d8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path><path d="M30 22l4 4-4 4" stroke="#9fb8d8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path><path d="M46 22l4 4-4 4" stroke="#9fb8d8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <div class="doc-header-text">
+    <div class="doc-num">Document 07</div>
+    <div class="doc-title">UX Writing Process Document</div>
+    <div class="doc-sub">End-to-end workflow from brief to shipped copy</div>
+  </div>
+</div>
+<div class="doc-purpose">
+  <svg class="purpose-icon" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M10 6v5" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="#2e4d8a"></circle></svg>
+  <p><strong>What this proves:</strong> You have a repeatable, structured process. You don't just "write stuff." You gather context, review research, collaborate, test, and iterate based on evidence.</p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><path d="M5 8h6M8 5v6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path></svg> Process Overview</h3>
+
+<div class="vflow">
+  <div class="vflow-step"><div class="vflow-num">1</div><svg width="24" height="24" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><line x1="8" y1="9" x2="16" y2="9" stroke="#2e4d8a" stroke-width="1.2" stroke-linecap="round"></line><line x1="8" y1="12" x2="14" y2="12" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line><line x1="8" y1="15" x2="16" y2="15" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line></svg><div class="vflow-name">Brief</div><div class="vflow-detail">Context &amp; constraints</div></div>
+  <div class="vflow-arrow">→</div>
+  <div class="vflow-step"><div class="vflow-num">2</div><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="10" r="6" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><line x1="16" y1="14" x2="20" y2="18" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></line></svg><div class="vflow-name">Research</div><div class="vflow-detail">Review data &amp; patterns</div></div>
+  <div class="vflow-arrow">→</div>
+  <div class="vflow-step"><div class="vflow-num">3</div><svg width="24" height="24" viewBox="0 0 24 24"><path d="M6 18l2-4 3 1 2-6 3 3 2-5" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="vflow-name">Draft</div><div class="vflow-detail">2-3 variants per element</div></div>
+  <div class="vflow-arrow">→</div>
+  <div class="vflow-step"><div class="vflow-num">4</div><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><circle cx="16" cy="12" r="4" fill="none" stroke="#9fb8d8" stroke-width="1.5"></circle></svg><div class="vflow-name">Review</div><div class="vflow-detail">Design, PM, Eng</div></div>
+  <div class="vflow-arrow">→</div>
+  <div class="vflow-step"><div class="vflow-num">5</div><svg width="24" height="24" viewBox="0 0 24 24"><path d="M6 12l4 4 8-8" stroke="#1a6b30" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="vflow-name">Test</div><div class="vflow-detail">Validate if high-stakes</div></div>
+  <div class="vflow-arrow">→</div>
+  <div class="vflow-step"><div class="vflow-num">6</div><svg width="24" height="24" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><path d="M4 10h16" stroke="#2e4d8a" stroke-width="1"></path><circle cx="16" cy="14" r="2" fill="none" stroke="#2e4d8a" stroke-width="1.2"></circle></svg><div class="vflow-name">Ship</div><div class="vflow-detail">Handoff + QA</div></div>
+  <div class="vflow-arrow">→</div>
+  <div class="vflow-step"><div class="vflow-num">7</div><svg width="24" height="24" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><path d="M8 14l2-3 3 2 3-5" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="vflow-name">Measure</div><div class="vflow-detail">Track impact</div></div>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><line x1="5" y1="5.5" x2="11" y2="5.5" stroke="#2e4d8a" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="8" x2="9" y2="8" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line><line x1="5" y1="10.5" x2="11" y2="10.5" stroke="#9fb8d8" stroke-width="1.2" stroke-linecap="round"></line></svg> Step 1: Brief Intake Checklist</h3>
+<ul>
+  <li><strong>What is the user doing?</strong> (Task, screen, state of mind)</li>
+  <li><strong>What is the business goal?</strong> (Conversion, support reduction, adoption)</li>
+  <li><strong>What are the constraints?</strong> (Char limits, localization, tech limits)</li>
+  <li><strong>What's the emotional context?</strong> (Stressed, excited, confused, neutral)</li>
+  <li><strong>What if the copy is wrong?</strong> (Low-stakes tooltip vs high-stakes payment)</li>
+  <li><strong>Who has sign-off?</strong> (PM, design lead, legal)</li>
+</ul>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="7" r="5" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><line x1="11.5" y1="10.5" x2="14" y2="13" stroke="#2e4d8a" stroke-width="2" stroke-linecap="round"></line></svg> Step 2: Research Review</h3>
+<ul>
+  <li>User research findings (interviews, usability tests, surveys)</li>
+  <li>Analytics (drop-off rates, error rates, task completion at this point)</li>
+  <li>Support ticket themes (what do users ask about at this step?)</li>
+  <li>Existing copy patterns (what have we done in similar contexts?)</li>
+  <li>Competitor approaches (how do similar products handle this?)</li>
+</ul>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 12l2-3 3 1.5 3-5" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1"></rect></svg> Step 3: Drafting — Always Write Variants</h3>
+<div class="ex">
+  <div class="ex-label"><svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="#e0e8ff"></circle><path d="M5 7l1.5 1.5L9 5.5" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round"></path></svg> Example: 3 Variants for an Error State</div>
+  <p><strong>Variant A (guidance-first):</strong> "Let's check that PAN — should look like ABCDE1234F."<br><em style="color:#666;font-size:9.5pt">Best for: users who want to fix quickly.</em></p>
+  <p><strong>Variant B (empathy-first):</strong> "That PAN doesn't look right. Format: 5 letters, 4 digits, 1 letter."<br><em style="color:#666;font-size:9.5pt">Best for: anxious users in financial flows.</em></p>
+  <p><strong>Variant C (minimal):</strong> "PAN format: ABCDE1234F"<br><em style="color:#666;font-size:9.5pt">Best for: experienced users who just need the format.</em></p>
+</div>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="6" cy="8" r="4" fill="none" stroke="#2e4d8a" stroke-width="1.5"></circle><circle cx="11" cy="8" r="4" fill="none" stroke="#9fb8d8" stroke-width="1.5"></circle></svg> Step 4: Review &amp; Collaboration</h3>
+<ul>
+  <li><strong>Design review:</strong> Does copy fit layout? Char limits respected? Tone match visual design? (Figma, async.)</li>
+  <li><strong>PM + Eng review:</strong> Technically accurate? Edge cases covered? Matches system behavior? (Copy deck, async/sync.)</li>
+</ul>
+<p>Never ask "what do you think?" Present variants with rationale and ask "which approach best serves the user here?" Shifts conversation from opinion to strategy.</p>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 12l3-3 3 2 3-5" stroke="#1a6b30" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg> Step 5: When to Test Copy</h3>
+<ul>
+  <li>High-stakes flow (financial, medical, account deletion)</li>
+  <li>New terminology or mental model being introduced</li>
+  <li>Internal disagreement that data can resolve</li>
+  <li>Onboarding flow directly impacting activation metrics</li>
+</ul>
+<p><strong>Methods:</strong> 5-second test (instant comprehension?), A/B test (which variant wins?), think-aloud usability test (how do users interpret this in context?).</p>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="4" width="12" height="8" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><path d="M2 7h12" stroke="#2e4d8a" stroke-width="1"></path><circle cx="11" cy="9.5" r="1.5" fill="none" stroke="#2e4d8a" stroke-width="1"></circle></svg> Step 6: Handoff &amp; QA</h3>
+<p>Final copy goes into copy deck (Doc 04 format) mapped to Figma frames. During QA, check: copy matches deck exactly, edge cases display correctly, truncation works, errors show right messages, and accessibility labels are implemented.</p>
+
+<h3 class="sec"><svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5"></rect><path d="M5 10l2-2 2 1 2-3" stroke="#2e4d8a" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg> Step 7: Measure Impact</h3>
+<table>
+<tbody><tr><th>Copy change</th><th>Metric to track</th></tr>
+<tr><td>Error message rewrite</td><td>Error-state abandonment rate</td></tr>
+<tr><td>Onboarding copy redesign</td><td>First-session completion rate</td></tr>
+<tr><td>Notification copy update</td><td>Open rate + opt-out rate</td></tr>
+<tr><td>Empty state rewrite</td><td>First-action completion from that screen</td></tr>
+<tr><td>CTA label change</td><td>Click-through rate</td></tr>
+</tbody></table>
+<p>Measurement closes the loop. Without it, UX writing is guesswork. With it, every shipped piece of copy becomes a learning opportunity.</p>
+
+<div class="tpl">
+  <svg width="20" height="20" viewBox="0 0 20 20" style="flex-shrink:0;margin-top:2px"><rect x="3" y="3" width="14" height="14" rx="2" fill="none" stroke="#2e4d8a" stroke-width="1.5" stroke-dasharray="3 2"></rect><path d="M10 7v6M7 10h6" stroke="#2e4d8a" stroke-width="1.5" stroke-linecap="round"></path></svg>
+  <div class="tpl-text"><div class="tpl-label">Customize</div><div class="tpl-field">Add your specific tools (Figma, Sheets, Jira, Notion), team review cadence, and 2-3 real examples showing this process from brief to shipped outcome with metrics.</div></div>
+</div>
+</div>
+
+
+<div class="footer">
+  Satyajit Roy · rsatyajit77@gmail.com · linkedin.com/in/rsatyajit77 · tinyurl.com/4vn84ytc
+</div>
+
+
+
+
+</body></html>
